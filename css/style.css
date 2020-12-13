@@ -216,19 +216,16 @@ img {
 }
 
 /* ========== FEATURES ========== */
-.features-item::before {
-  content: "";
+
+.features-icon {
   display: flex;
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 
-.features-item:nth-child(1)::before {
-  background-image: url("../images/sprite.svg#icon-antenna");
-  background-repeat: no-repeat;
-  background-size: 70px 70px;
+  background-color: var(--secondary-background-color);
 }
 
 .features .features-list {
@@ -315,6 +312,7 @@ img {
 .social-list-icon {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
 }
 
 .social-list-link:hover,
@@ -378,6 +376,10 @@ img {
 
 /* ========== CUSTOMERS ========== */
 
+.customers-icon {
+  fill: #afb1b8;
+}
+
 .customers .container {
   text-align: center;
 }
@@ -408,6 +410,10 @@ img {
 .customers-list-link:hover .customers-icon,
 .customers-list-link:focus .customers-icon {
   fill: var(--accent-color);
+}
+
+.customers-list-link:hover {
+  border: 1px solid #2196f3;
 }
 
 /* ========== FOOTER ========== */
@@ -444,6 +450,7 @@ img {
 
 .footer .social {
   margin-left: 70px;
+  margin-top: 12px;
 }
 
 .join {
